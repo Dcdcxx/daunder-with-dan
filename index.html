@@ -161,6 +161,23 @@
 
     /* Utility */
     .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 24px}
+
+    /* Mascot image in hero */
+.mascot-hero {
+  position: absolute;
+  bottom: -40px; /* Adjust if needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mascot-hero img {
+  width: 160px;
+  max-width: 40vw;
+  height: auto;
+}
+
   </style>
 </head>
 <body>
@@ -191,6 +208,10 @@
           <span class="pill">Pint stop (optional)</span>
         </div>
         <a class="btn" href="https://YOUR-BOOKING-LINK" target="_blank" rel="noopener">Book Now</a>
+        <div class="mascot-hero">
+            <img src="mascot.png" alt="Mascot Dan with pint and map">
+          </div>
+          
         <span style="margin-left:10px"></span>
         <a class="btn-outline" href="#pricing">See pricing</a>
       </div>
