@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Daunder with Dan — Around Edinburgh with sights and pints</title>
+  <meta name="description" content="A small-group wander through Edinburgh with just enough facts to justify going back to the pub. 2.5 hours, max 4 people, sights you’ll remember." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A Daunder with Dan" />
+  <meta property="og:description" content="Around Edinburgh with sights and pints. Small groups, relaxed pace, and stories you’ll actually remember." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.vercel.app/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Daunder with Dan" />
+  <meta name="twitter:description" content="Around Edinburgh with sights and pints. Small groups, relaxed pace, and stories you’ll actually remember." />
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.vercel.app/og-image.jpg" />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <style>
+    :root{
+      --bg:#0f1115; --card:#171a21; --muted:#8b92a6; --text:#e9ecf1; --accent:#7dd3fc;
+      --accent-2:#a3e635; --max:980px
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Inter,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header.nav{
+      position:sticky;top:0;z-index:20;background:rgba(15,17,21,.7);backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid #22252f
+    }
+    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .brand img{width:32px;height:32px;border-radius:8px;object-fit:cover}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#0b1020;padding:10px 16px;border-radius:12px;font-weight:700;border:0}
+    .btn:hover{opacity:.9}
+    .section{padding:56px 16px}
+    .container{max-width:var(--max);margin:0 auto}
+    .hero{
+      padding:72px 16px 48px;background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(125,211,252,.08), transparent 60%),
+        radial-gradient(900px 500px at -10% 20%, rgba(163,230,53,.06), transparent 60%);
+      border-bottom:1px solid #1e2230
+    }
+    .hero h1{font-size:clamp(28px,6vw,48px);line-height:1.1;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .row{display:grid;grid-template-columns:1fr;gap:20px}
+    @media(min-width:860px){.row{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border:1px solid #252a38;border-radius:16px;padding:20px}
+    .list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+    .pill{display:inline-block;background:#222736;border:1px solid #2c3243;color:#c9d1e8;border-radius:999px;padding:6px 12px;font-size:14px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:1fr}
+    @media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+    .faq-item{border:1px solid #252a38;border-radius:12px;overflow:hidden}
+    .faq-q{background:#1a1f2b;padding:14px 16px;cursor:pointer;font-weight:600}
+    .faq-a{padding:14px 16px;display:none}
+    footer{border-top:1px solid #212433;padding:24px 16px}
+    .tiny{font-size:13px;color:var(--muted)}
+    .logo-type{font-weight:800;letter-spacing:.2px}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="logo.png" alt="A Daunder with Dan logo" onerror="this.style.display='none'">
+        <span class="logo-type">A Daunder with Dan</span>
+      </div>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#tour">The Tour</a>
+        <a href="#why">Why Join</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="https://YOUR-BOOKING-LINK" target="_blank" rel="noopener">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container row">
+      <div>
+        <h1>A Daunder with Dan</h1>
+        <p class="muted">Around Edinburgh with sights and pints. Small groups (max 4), relaxed pace, and a few wee facts you’ll actually remember.</p>
+        <div class="grid" style="grid-template-columns: auto auto auto;gap:10px;margin:18px 0 24px">
+          <span class="pill">~2.5 hours</span>
+          <span class="pill">~5.8 km</span>
+          <span class="pill">Pint stop (optional)</span>
+        </div>
+        <a class="btn" href="https://YOUR-BOOKING-LINK" target="_blank" rel="noopener">Book Now</a>
+      </div>
+      <div>
+        <div class="card">
+          <strong>What this is:</strong>
+          <ul class="list">
+            <li>• A small-group wander with a local.</li>
+            <li>• Views, stories, and a pub break.</li>
+            <li>• Short, memorable bits—not a lecture.</li>
+          </ul>
+          <div style="height:12px"></div>
+          <strong>What this isn’t:</strong>
+          <ul class="list">
+            <li>• Twenty people following a flag.</li>
+            <li>• Endless dates and timelines.</li>
+            <li>• A race round the city.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>About Dan</h2>
+        <p>I’m Daniel, born and raised in Scotland, and Edinburgh is the place I call home. I like showing people the city in a way that feels relaxed, funny, and memorable—more like wandering with a friend than following a script.</p>
+        <p class="muted">Expect some sarcasm, plenty of laughs, and a few wee facts you’ll actually remember.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">The essentials</h3>
+        <ul class="list">
+          <li>• Max 4 people (families of 5 on request)</li>
+          <li>• Language: English</li>
+          <li>• Pace: relaxed; hills and cobbles included</li>
+          <li>• Meeting point: “Centre of Edinburgh” bollard (Waterloo Place)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tour" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>The Tour</h2>
+        <p>We start at the (underwhelming) “centre of Edinburgh” bollard, head up Calton Hill for the views, then wander the Old Town and Grassmarket with a pint stop along the way. Short stories, daft details, and time for photos.</p>
+        <ul class="list">
+          <li>• Calton Hill (Nelson Monument, National Monument, Playfair)</li>
+          <li>• Old Town closes & viewpoints (towards Leith)</li>
+          <li>• Grassmarket & Royal Mile</li>
+          <li>• Portuguese cannon cameo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Good to know</h3>
+        <ul class="list">
+          <li>• Toilets and pub stop built into the route.</li>
+          <li>• Not heavy on dates; light, human stories instead.</li>
+          <li>• Wet‑weather adjustments if needed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Why Join</h2>
+        <ul class="list">
+          <li>• Tiny groups—feels personal, not crowded.</li>
+          <li>• Stories you’ll remember (and repeat in the pub later).</li>
+          <li>• A guide who sounds like a person, not a brochure.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">A wee note</h3>
+        <p class="muted"><strong>Disclaimer:</strong> If you’re after exact dates, long timelines, and flawless historical accuracy, I’m not the Dan for you. There are tours that’ll give you that. This one’s for a laugh, a wander, a pint, and just enough history to tick the tourism box.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Pricing & Booking</h2>
+        <p><strong>£40 per person</strong> — small groups only (max 4). Families of 5 by request.</p>
+        <a class="btn" href="https://YOUR-BOOKING-LINK" target="_blank" rel="noopener">Book Now</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">What’s included</h3>
+        <ul class="list">
+          <li>• 2.5‑hour guided daunder (~5.8 km)</li>
+          <li>• A planned pub stop (drinks not included)</li>
+          <li>• Recommendations for the rest of your trip</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <div class="faq-item">
+          <div class="faq-q">Is this a history-heavy tour?</div>
+          <div class="faq-a">No. You’ll get the gist and the good stories—short and memorable—without a lecture.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I have to drink?</div>
+          <div class="faq-a">No. We stop at a pub for a sit-down; you can grab a soft drink, tea, or nothing at all.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is it suitable for kids?</div>
+          <div class="faq-a">Aye. Content and language adjusted to the group. Families of five can enquire by email.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Where do we meet?</div>
+          <div class="faq-a">At the “Centre of Edinburgh” bollard on Waterloo Place. It’s a literal bollard—hard to miss.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container grid grid-2">
+      <div>
+        <strong>A Daunder with Dan</strong><br/>
+        <span class="tiny">© <span id="y"></span> A Daunder with Dan. All rights reserved.</span>
+      </div>
+      <div style="text-align:right">
+        <a class="btn" href="mailto:youremail@example.com">Email Dan</a>
+        <a style="margin-left:8px" href="https://instagram.com/YOURHANDLE" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD: TouristTrip -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"A Daunder with Dan",
+    "description":"Small-group wander through Edinburgh with sights and a pub stop. Light on dates; big on memorable stories.",
+    "touristType":"Couples, small groups",
+    "offers":{"@type":"Offer","price":"40","priceCurrency":"GBP","availability":"https://schema.org/InStock"},
+    "itinerary":{
+      "@type":"ItemList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Centre of Edinburgh bollard"},
+        {"@type":"ListItem","position":2,"name":"Calton Hill"},
+        {"@type":"ListItem","position":3,"name":"Old Town & closes"},
+        {"@type":"ListItem","position":4,"name":"Grassmarket & Royal Mile"}
+      ]
+    },
+    "provider":{"@type":"Person","name":"Daniel"}
+  }
+  </script>
+
+  <script>
+    // FAQ toggles
+    document.querySelectorAll('.faq-q').forEach(q=>{
+      q.addEventListener('click', ()=> {
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
