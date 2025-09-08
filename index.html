@@ -45,6 +45,7 @@
     h1,h2,h3{line-height:1.2;margin:0 0 .4em}
     p{margin:.2em 0 1em}
     ul{margin:0 0 1em 1.2em}
+
     /* Nav */
     header.nav{
       position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);
@@ -63,9 +64,11 @@
       display:inline-block;border:2px solid var(--accent);color:var(--accent);
       padding:9px 14px;border-radius:12px;font-weight:700;background:#fff
     }
+
     /* Sections */
     .section{padding:64px 16px}
     .container{max-width:var(--max);margin:0 auto}
+
     /* Hero */
     .hero{
       padding:86px 16px 56px;
@@ -78,6 +81,7 @@
     .hero p{color:var(--muted);margin:0 0 18px}
     .row{display:grid;grid-template-columns:1fr;gap:24px}
     @media(min-width:880px){.row{grid-template-columns:1.2fr .8fr}}
+
     /* Cards */
     .card{
       background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
@@ -92,14 +96,17 @@
     .grid{display:grid;gap:16px}
     .grid-2{grid-template-columns:1fr}
     @media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+
     /* FAQ */
     .faq-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
     .faq-q{background:#fff;padding:16px 18px;cursor:pointer;font-weight:700;border-bottom:1px solid var(--line)}
     .faq-a{padding:16px 18px;display:none}
+
     /* Footer */
     footer{border-top:1px solid var(--line);padding:28px 16px;background:#fff}
     .tiny{font-size:13px;color:var(--muted)}
     .logo-type{font-weight:800;letter-spacing:.2px}
+
     /* Utility */
     .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 24px}
   </style>
@@ -179,4 +186,129 @@
     <div class="container grid grid-2">
       <div class="card">
         <h2>The Tour</h2>
-        <p>We start at the (underwhelming) “centre of Edinburgh” bollard, head up Calton Hill for the views, then wander the Old Town and Grassmarket with
+        <p>We start at the (underwhelming) “centre of Edinburgh” bollard, head up Calton Hill for the views, then wander the Old Town and Grassmarket with a pint stop along the way. Short stories, daft details, and time for photos.</p>
+        <ul class="list">
+          <li>• Calton Hill (Nelson Monument, National Monument, Playfair)</li>
+          <li>• Old Town closes & viewpoints (towards Leith)</li>
+          <li>• Grassmarket & Royal Mile</li>
+          <li>• Portuguese cannon cameo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Good to know</h3>
+        <ul class="list">
+          <li>• Toilets and pub stop built into the route.</li>
+          <li>• Not heavy on dates; light, human stories instead.</li>
+          <li>• Wet-weather adjustments if needed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Why Join</h2>
+        <ul class="list">
+          <li>• Tiny groups—feels personal, not crowded.</li>
+          <li>• Stories you’ll remember (and repeat in the pub later).</li>
+          <li>• A guide who sounds like a person, not a brochure.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">A wee note</h3>
+        <p class="muted"><strong>Disclaimer:</strong> If you’re after exact dates, long timelines, and flawless historical accuracy, I’m not the Dan for you. There are tours that’ll give you that. This one’s for a laugh, a wander, a pint, and just enough history to tick the tourism box.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Pricing & Booking</h2>
+        <p><strong>£40 per person</strong> — small groups only (max 4). Families of 5 by request.</p>
+        <a class="btn" href="https://YOUR-BOOKING-LINK" target="_blank" rel="noopener">Book Now</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">What’s included</h3>
+        <ul class="list">
+          <li>• 2.5-hour guided daunder (~5.8 km)</li>
+          <li>• A planned pub stop (drinks not included)</li>
+          <li>• Recommendations for the rest of your trip</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <div class="faq-item">
+          <div class="faq-q">Is this a history-heavy tour?</div>
+          <div class="faq-a">No. You’ll get the gist and the good stories—short and memorable—without a lecture.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I have to drink?</div>
+          <div class="faq-a">No. We stop at a pub for a sit-down; you can grab a soft drink, tea, or nothing at all.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is it suitable for kids?</div>
+          <div class="faq-a">Aye. Content and language adjusted to the group. Families of five can enquire by email.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Where do we meet?</div>
+          <div class="faq-a">At the “Centre of Edinburgh” bollard on Waterloo Place. It’s a literal bollard—hard to miss.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:grid;gap:12px;grid-template-columns:1fr;align-items:center;">
+      <div>
+        <strong>A Daunder with Dan</strong><br/>
+        <span class="tiny">© <span id="y"></span> A Daunder with Dan. All rights reserved.</span>
+      </div>
+      <div style="text-align:left; margin-top:6px">
+        <a class="btn" href="mailto:youremail@example.com">Email Dan</a>
+        <a style="margin-left:8px" href="https://instagram.com/YOURHANDLE" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD: TouristTrip -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"A Daunder with Dan",
+    "description":"Small-group wander through Edinburgh with sights and a pub stop. Light on dates; big on memorable stories.",
+    "touristType":"Couples, small groups",
+    "offers":{"@type":"Offer","price":"40","priceCurrency":"GBP","availability":"https://schema.org/InStock"},
+    "itinerary":{
+      "@type":"ItemList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Centre of Edinburgh bollard"},
+        {"@type":"ListItem","position":2,"name":"Calton Hill"},
+        {"@type":"ListItem","position":3,"name":"Old Town & closes"},
+        {"@type":"ListItem","position":4,"name":"Grassmarket & Royal Mile"}
+      ]
+    },
+    "provider":{"@type":"Person","name":"Daniel"}
+  }
+  </script>
+
+  <script>
+    // FAQ toggles
+    document.querySelectorAll('.faq-q').forEach(q=>{
+      q.addEventListener('click', ()=> {
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
