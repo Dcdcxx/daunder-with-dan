@@ -63,7 +63,13 @@
 
     .brand{display:flex;align-items:center;gap:10px;font-weight:800}
     .brand img{width:36px;height:36px;border-radius:10px;object-fit:cover}
-    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 10px; /* 👈 this nudges the links downward */
+}
+
     .btn{
       display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent-2));
       color:#fff;padding:11px 16px;border-radius:12px;font-weight:700;border:0;box-shadow:var(--shadow)
