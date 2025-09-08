@@ -51,7 +51,16 @@
       position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);
       backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)
     }
-    .nav-inner{max-width:var(--max);margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 16px}
+    .nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end; /* 👈 try flex-end instead of center */
+  justify-content: space-between;
+  padding: 16px 16px 10px; /* 👈 optional: give top more space */
+}
+
     .brand{display:flex;align-items:center;gap:10px;font-weight:800}
     .brand img{width:36px;height:36px;border-radius:10px;object-fit:cover}
     .links{display:flex;gap:16px;flex-wrap:wrap}
